@@ -3,7 +3,7 @@ def update_status
       :montague => {
          :patriarch => {name: "Lord Montague", age: "53"},
          :matriarch => {name: "Lady Montague", age: "54"},
-         :hero => {name: "Romeo", age: "15", status: "alive"},
+         :hero => {name: "Romeo", age: "15", status: "dead"},
          :hero_friends => [
             {name: "Benvolio", age: "17", attitude: "worried"},
             {name: "Mercutio", age: "18", attitude: "hot-headed"}
@@ -23,7 +23,7 @@ def update_status
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
 
-
+epic_tragedy[:capulet][:heroine][:status] = "dead"
 
 
   # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
@@ -35,7 +35,7 @@ def add_characters
       :montague => {
          :patriarch => {name: "Lord Montague", age: "53"},
          :matriarch => {name: "Lady Montague", age: "54"},
-         :hero => {name: "Romeo", age: "15", status: "alive"},
+         :hero => {name: "Romeo", age: "15", status: "dead"},
          :hero_friends => [
             {name: "Benvolio", age: "17", attitude: "worried"},
             {name: "Mercutio", age: "18", attitude: "hot-headed"}
@@ -61,7 +61,10 @@ def add_characters
    # Code your solution here:
 
 
-
+epic_tragedy = {:additional_characters => [
+      {:name => "Prince Escalus" },
+      {:name => "Apothecary"}
+      ]}
 
 
 
